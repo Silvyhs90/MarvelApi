@@ -15,14 +15,12 @@ export const Router = () => {
                 <li>
                 <a href="/">Home Page</a>
                 </li>
-                
              </ul>
           </div>
           </nav>
           </div>   
           <Routes>
              <Route exact path="/" element={<Home />} />
-
            </Routes>
      </BrowserRouter>
      );

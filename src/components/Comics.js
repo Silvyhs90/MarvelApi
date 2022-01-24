@@ -2,19 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-export const Characters = ({thumbnail, name, description, urls}) => {
+export const Comics = ({thumbnail, title, urls,series,modified}) => {
 
 
     return (
         <Header>
             <a href={`${urls[0].url}`} target="_blank" rel='noreferrer'>
-             <img src={`${thumbnail.path}.${thumbnail.extension}`} alt={name} className="card-img-top"/>
+             <img src={`${thumbnail.path}.${thumbnail.extension}`} alt={title} className="card-img-top"/>
              </a>
         <Wrapper>
             <div className="container">
-                <h4>{name}</h4>
+                <h4>{title}</h4>
+                <h4>{modified}</h4>
             <View>
-                <h4>{description}</h4>
+                <span>Series:   {`${series.name}`}</span>
             </View>
             </div>
         </Wrapper>
