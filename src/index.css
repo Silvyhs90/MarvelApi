@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  
 }
 
 html {
@@ -21,21 +19,17 @@ img{
 .imagen-portada{
   width: 100%;
 }
-.imagen-texto{
-  background-color: rgb(218, 35, 35);
-  color:white
-}
 
 .imagen{
   background-image: url("./images/logo.png");
   background-position: top;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 150px;
+  width: 150px;
+  height: 60px;
   border-top-width: 150px;
   padding-top:10px;
-  
  }
+
 
 .movie{
   display:block;
@@ -90,5 +84,6 @@ code {
 .movie-container{
   display:flex;
   flex-wrap: wrap;
+  object-fit:contain;
 
 }

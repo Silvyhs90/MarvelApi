@@ -27,7 +27,6 @@ export const Characters = ({thumbnail, name, description, urls}) => {
 
 const Header = styled.div`
     width:400px;
-    background-color: #00000;
     margin:1rem;
     border-radius: 3px;
     box-shadow: 3px 3px 5px rgba(0,0,0.1);

@@ -2,11 +2,10 @@ import React from 'react'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import {Home} from "../pages/HomePage/index"
 
-
 export const Router = () => {
     return (
      <BrowserRouter>
-          <div className="contenedor">
+          <div>
           <div className='imagen'>
                 </div>
                 <nav>
