@@ -26,12 +26,12 @@ export const Characters = ({thumbnail, name, description, urls}) => {
 };
 
 const Header = styled.div`
-    width:400px;
+    width:280px;
     margin:1rem;
     border-radius: 3px;
     box-shadow: 3px 3px 5px rgba(0,0,0.1);
     position:relative;
-    padding-bottom: 3px;
+    padding-bottom: 1px;
     overflow: scroll;
     float:left; 
 
@@ -41,7 +41,7 @@ const Header = styled.div`
    
     img{
         max-width: 100%;
-        height: 380px;
+        height: 350px;
         object-fit:contain;
     }
 `

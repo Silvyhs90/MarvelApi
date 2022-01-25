@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+
 }
 
 html {
@@ -17,7 +21,12 @@ img{
 }
 
 .imagen-portada{
-  width: 100%;
+
+
+
+  width: 100%; 
+  height: auto;
+
 }
 
 .imagen{
@@ -25,9 +34,10 @@ img{
   background-position: top;
   background-repeat: no-repeat;
   width: 150px;
-  height: 60px;
-  border-top-width: 150px;
+  height: 70px;
+  border-top-width: 160px;
   padding-top:10px;
+  position: absolute;
  }
 
 
@@ -68,7 +78,8 @@ li a {
 
 
 li a:hover {
-  background-color: #ec9c9c;
+  background-color: #e7101b;
+  color: black;
 }
 
 code {
