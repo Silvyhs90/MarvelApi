@@ -59,7 +59,7 @@ const HomePage = styled.div`
     margin-top:20px;
     font-size: 1.5rem;
     border:2px solid black;
-    padding:0.5rem 1.9rem;
+    padding:0.5rem 1.5rem;
     border-radius:150px;
     border-color:red;
     `;
