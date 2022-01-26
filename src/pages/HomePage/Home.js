@@ -25,7 +25,7 @@ export const Home = ({searchItem}) => {
   return (
     <HomePage>
       <Wrapper>
-        <div className="imagen-texto">
+        <div className="container-fluid">
           <img src={portada} className="imagen-portada" alt="portada" />
         </div>
         <Search searchItem={searchItem}/>
@@ -43,7 +43,7 @@ export const Home = ({searchItem}) => {
 const HomePage = styled.div`
 display:block; 
 display:inline-block;
-background-color: #e7101b;
+background-color: #000000;
 flex-wrap: wrap;
 `
 

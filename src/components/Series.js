@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-export const Comics = ({thumbnail, title, urls,series,modified}) => {
+export const Series = ({thumbnail, startYear, endYear, title, urls,description, modified}) => {
 
 
     return (
@@ -13,9 +13,11 @@ export const Comics = ({thumbnail, title, urls,series,modified}) => {
         <Wrapper>
             <div className="container">
                 <h4>{title}</h4>
-                <h4>{modified}</h4>
+                <h4>{description}</h4>
             <View>
-                <span>Series:   {`${series.name}`}</span>
+            <span>{modified}</span>
+                <span>{startYear}</span>
+                <span>{endYear}</span>
             </View>
             </div>
         </Wrapper>

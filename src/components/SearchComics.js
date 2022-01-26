@@ -54,12 +54,12 @@ const HomePage = styled.div`
     flex-wrap: wrap;
     `
     const SearchBar = styled.input`
-    margin-left: auto;
+    margin-left: 1.5rem;
     margin-bottom: 20px;
     margin-top:20px;
     font-size: 1.5rem;
     border:2px solid black;
-    padding:0.5rem 1.5rem;
-    border-radius:60px;
+    padding:0.5rem 1.9rem;
+    border-radius:150px;
     border-color:red;
     `;

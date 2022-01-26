@@ -1,20 +1,20 @@
 import axios from 'axios';
 import React from 'react'
 import styled from 'styled-components'
-import { Characters } from './Characters';
+import { Series } from './Series';
 
-export const Search = () => {
+export const SearchSeries = () => {
 
     const [searchTerm, seSearchTerm] = React.useState("");
-    const [characters, setCharacters] = React.useState([]);
+    const [series, setSeries] = React.useState([]);
 
     const handleOnSubmit =(e) => {
         e.preventDefault();
 
-        axios.get(`https://gateway.marvel.com:443/v1/public/characters?name=${searchTerm}&ts=1&apikey=18461a0b621645afee766b2f79cdef0c&hash=51d43a3f7242f048749cfd82b8cc25f4`)
+        axios.get(`https://gateway.marvel.com:443/v1/public/series?title=${searchTerm}&ts=1&apikey=18461a0b621645afee766b2f79cdef0c&hash=51d43a3f7242f048749cfd82b8cc25f4`)
         .then((res) => {
             console.log(res.data.data.results)
-            setCharacters(res.data.data.results)
+            setSeries(res.data.data.results)
         }).catch((error) => {
             console.log(error)
         })
@@ -31,13 +31,13 @@ export const Search = () => {
         <form onSubmit={handleOnSubmit}>
         <SearchBar
             type="search"
-            placeholder="Search Character.." 
+            placeholder="Search Comic.." 
             value={searchTerm}
             onChange={handleOnChange}
             />
         </form>
         <div className="movie-container">
-            {characters.length > 0 && characters.map((char) => <Characters key={char.id} {...char}/> )}
+            {series.length > 0 && series.map((serie) => <Series key={serie.id} {...serie}/> )}
             </div>
        </Wrapper>
         </HomePage>
